@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements</title>
+</head>
+
+<body style="padding: 50px;">
+
+
+  <form action="" method="get">
+
+
+    <h2>🤟 Input Box : </h2>
+    <label for="Username">Your Name : </label>
+    <input type="text" id="Username" name="Username"> <br> <br>
+
+
+
+    <h2>🤟 Select Box : </h2>
+    <!-- The <select> Element, The <select> element defines a drop-down list: -->
+    <!-- The <option> elements defines an option that can be selected.By default, the first item in the drop-down list is selected.To define a pre-selected option, add the selected attribute to the option: -->
+    <label for="favourite">Your Favourite : </label>
+    <select name="" id="favourite">
+      <option value="#">No Selected</option>
+      <option value="#">Driving</option>
+      <option value="#">Watching Movies</option>
+      <option value="#" selected>Cricket</option>
+      <option value="#">Vedio Game</option>
+      <option value="#">Stroy Writing</option>
+    </select><br> <br>
+
+
+    <!-- Visible Values: Use the size attribute to specify the number of visible values: -->
+    <label for="favourite">Your Favourite : (Visible Values) </label><br>
+    <select name="" id="favourite" size="2">
+      <option value="#">No Selected</option>
+      <option value="#">Driving</option>
+      <option value="#">Watching Movies</option>
+      <option value="#">Cricket</option>
+      <option value="#">Vedio Game</option>
+      <option value="#">Stroy Writing</option>
+    </select><br> <br>
+
+
+
+    <!-- Allow Multiple Selections: Use the multiple attribute to allow the user to select more than one value: -->
+    <label for="favourite">Your Favourite : (Allow Multiple Selections) </label><br>
+    <select name="" id="favourite" size="4" multiple>
+      <option value="#">No Selected</option>
+      <option value="#">Driving</option>
+      <option value="#">Watching Movies</option>
+      <option value="#">Cricket</option>
+      <option value="#">Vedio Game</option>
+      <option value="#">Stroy Writing</option>
+    </select><br> <br>
+
+
+
+    <h2>🤟 Textarea Box : </h2>
+    <!-- The <textarea> Element,The <textarea> element defines a multi-line input field (a text area): -->
+    <textarea name="message" rows="7" cols="40"> Write Your Commnets </textarea>
+    <br>
+    <input type="submit" value="Done">
+
+
+
+    <h2>🤟 Button : </h2>
+    <!-- The <button> Element,The <button> element defines a clickable button: Note: Always specify the type attribute for the button element. Different browsers may use different default types for the button element. -->
+    <span>This is a Button :</span>
+    <button type="button" onclick="alert('Hello Everyone , How are You ?')">Click Me!</button>
+    <br><br>
+
+
+
+    <h2>🤟 Fieldset : </h2>
+    <!-- The <fieldset> and <legend> Elements:The <fieldset> element is used to group related data in a form. The <legend> element defines a caption for the <fieldset> element. -->
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+
+    <h2>🤟 Data List : </h2>
+    <!-- The <datalist> Element,The <datalist> element specifies a list of pre-defined options for an <input> element.Users will see a drop-down list of the pre-defined options as they input data.The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.The list attribute of the <input> element, must refer to the id attribute of the <datalist> element. -->
+    <label for="">Choose Your Favourite Browser : </label>
+    <input list="Datalist">
+    <datalist id="Datalist">
+      <option value="Safari">
+      <option value="Chrome">
+      <option value="Edge">
+      <option value="Opera">
+      <option value="FireFox">
+    </datalist>
+
+  </form>
+
+
+
+
+
+</body>
+</html>

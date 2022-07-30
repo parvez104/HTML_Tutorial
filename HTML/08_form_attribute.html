@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute</title>
+</head>
+<body>
+    
+<!-- 
+The Action Attribute :
+The action attribute defines the action to be performed when the form is submitted.
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data: -->
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+<!-- The Target Attribute :
+The target attribute specifies where to display the response that is received after submitting the form.
+The target attribute can have one of the following values: -->
+
+<form action="/action_page.php" target="_blank"></form>
+
+
+<!-- 
+The Method Attribute :
+The method attribute specifies the HTTP method to be used when submitting the form data.
+The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+The default HTTP method when submitting form data is GET. 
+-->
+<form action="/action_page.php" method="get"></form>
+<form action="/action_page.php" method="post">
+
+
+<!-- The Autocomplete Attribute
+The autocomplete attribute specifies whether a form should have autocomplete on or off.
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before. -->
+<form action="/action_page.php" autocomplete="on"></form>
+
+
+
+<!-- The Novalidate Attribute
+The novalidate attribute is a boolean attribute.
+When present, it specifies that the form-data (input) should not be validated when submitted.
+Example
+A form with a novalidate attribute: -->
+<form action="/action_page.php" novalidate>
+
+
+</body>
+</html>
